@@ -1,0 +1,419 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import persona from "@assets/imagen1.webp";
+import dibujos from "@assets/imagen2.webp";
+import chat from "@assets/imagen3.webp";
+import play from "@assets/imagen4.png";
+import testimonial1 from "@assets/testimonial1.png";
+import team1 from "@assets/team1.png";
+import carta from "@assets/carta.png";
+import logo from "@assets/logo.webp";
+import Button from "@components/Button.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Header />
+  <div
+    class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 md:px-0 mt-10"
+  >
+    <div
+      class="flex flex-col justify-center items-start space-y-5 md:space-y-10"
+    >
+      <h1
+        class="text-4xl md:text-6xl font-extrabold text-slate-900 text-wrap leading-tight"
+      >
+        We boost <br />growth for your statup business
+      </h1>
+      <p class="text-gray-800 text-lg text-wrap">
+        Our goal is top at the heart of creativity services industry as a
+        digital creator. In has a after comment
+      </p>
+      <div class="flex flex-row justify-between gap-3 items-center">
+        <Button title="Get Started" href="#" />
+        <svg
+          class="w-10"
+          viewBox="0 0 50 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            d="M30 10C41.0232 10 50 18.9725 50 30.0116C50 41.0275 41.0232 50 30 50C18.9768 50 10 41.0275 10 30.0116C10 18.9725 18.9768 10 30 10ZM27.722 22.0598C27.2973 22.0598 26.8919 22.1563 26.5058 22.3493C26.0232 22.6194 25.6371 23.0439 25.4247 23.5456C25.2896 23.8929 25.0772 24.9349 25.0772 24.9542C24.8649 26.0926 24.749 27.945 24.749 29.9904C24.749 31.9411 24.8649 33.7144 25.0386 34.8722C25.0579 34.8915 25.2703 36.1843 25.5019 36.6281C25.9266 37.4385 26.7568 37.9402 27.6448 37.9402H27.722C28.3012 37.9209 29.5174 37.4192 29.5174 37.3999C31.5637 36.5509 35.5985 33.9074 37.2201 32.1515L37.3359 32.0357C37.5483 31.8234 37.8185 31.4954 37.8764 31.4182C38.1853 31.013 38.3398 30.5113 38.3398 30.0116C38.3398 29.4501 38.166 28.9291 37.8378 28.5046C37.7606 28.4274 37.471 28.0994 37.2008 27.8292C35.6178 26.1312 31.4865 23.3526 29.3243 22.5036C28.9961 22.3705 28.166 22.0791 27.722 22.0598Z"
+            fill="#5F6064"></path><path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60V56C15.6406 56 4 44.3594 4 30C4 15.6406 15.6406 4 30 4V0Z"
+            fill="#FF6600"></path></svg
+        >
+        <span>Learn More</span>
+      </div>
+    </div>
+    <div class="relative">
+      <img class="relative left-6 md:left-20" src={persona.src} alt="" />
+      <img
+        class="absolute -left-16 md:-left-28 top-10 md:top-7 -z-20 md:w-[500px]"
+        src={chat.src}
+        alt=""
+      />
+      <img
+        class="absolute left-2 top-14 -z-10 md:left-9 md:top-24"
+        src={dibujos.src}
+        alt=""
+      />
+    </div>
+  </div>
+  <main class="py-20 bg-gray-50">
+    <section class="max-w-6xl mx-auto px-6 md:px-0 mt-10">
+      <p class="text-center">SERVICE</p>
+      <h2 class="text-center text-4xl font-bold text-slate-900">
+        Our Vison & Our Goal
+      </h2>
+      <section class="grid md:grid-cols-3 gap-5 md:gap-16 mt-20">
+        <article
+          class="shadow-xl text-center space-y-10 px-10 py-16 rounded-xl bg-white"
+        >
+          <h3 class="text-2xl font-semibold">Graphic Design</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+            minus aperiam ullam excepturi delectus aliquid, beatae voluptate
+            sunt minima. Repellat!
+          </p>
+          <div>
+            <Button title="Learn More" href="#" />
+          </div>
+        </article>
+        <article
+          class="shadow-xl text-center space-y-10 px-10 py-16 rounded-xl bg-white"
+        >
+          <h3 class="text-2xl font-semibold">Video Editing</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+            minus aperiam ullam excepturi delectus aliquid, beatae voluptate
+            sunt minima. Repellat!
+          </p>
+          <div>
+            <Button title="Learn More" href="#" />
+          </div>
+        </article>
+        <article
+          class="shadow-xl text-center space-y-10 px-10 py-16 rounded-xl bg-white"
+        >
+          <h3 class="text-2xl font-semibold">Digital Marketing</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+            minus aperiam ullam excepturi delectus aliquid, beatae voluptate
+            sunt minima. Repellat!
+          </p>
+          <div>
+            <Button title="Learn More" href="#" />
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <section
+      class="max-w-6xl mx-auto px-6 md:px-0 mt-40 gap-10 grid grid-cols-1 md:grid-cols-2"
+    >
+      <div class="space-y-10 flex flex-col items-start">
+        <h3 class="text-2xl">Many Blocks and Components</h3>
+        <p class="text-wrap w-1/2 text-gray-500 flex-1">
+          Startup Framework contains components and complex blocks which can
+          easily be integrated into almost any design.
+        </p>
+        <a
+          href="#"
+          class="py-2 px-6 text-gray-800 border border-gray-800 rounded-3xl text-lg"
+          >Explore</a
+        >
+      </div>
+      <div>
+        <img src={play.src} alt="" />
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 md:px-0 mt-32 text-center">
+      <span class="text-gray-500 tracking-wide text-sm">TESTMONIALS</span>
+      <h3 class="text-3xl font-semibold">What Clients say about us</h3>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-20 px-0 md:px-20 py-10"
+      >
+        <article class="flex text-start">
+          <div class="p-5">
+            <img src={testimonial1.src} alt="" width="200" class="" />
+          </div>
+          <div class="p-5">
+            <p class="mb-5">
+              Get a fully retina ready site when you build with Startup
+              Framework. Websites look sharper and more gorgeous on devices with
+              retina display support
+            </p>
+            <span class="uppercase text-sm text-gray-400">Rayhan Curran</span>
+          </div>
+        </article>
+        <article class="flex text-start">
+          <div class="p-5">
+            <img src={testimonial1.src} alt="" width="200" class="" />
+          </div>
+          <div class="p-5">
+            <p class="mb-5">
+              Get a fully retina ready site when you build with Startup
+              Framework. Websites look sharper and more gorgeous on devices with
+              retina display support
+            </p>
+            <span class="uppercase text-sm text-gray-400">Rayhan Curran</span>
+          </div>
+        </article>
+        <article class="flex text-start">
+          <div class="p-5">
+            <img src={testimonial1.src} alt="" width="200" class="" />
+          </div>
+          <div class="p-5">
+            <p class="mb-5">
+              Get a fully retina ready site when you build with Startup
+              Framework. Websites look sharper and more gorgeous on devices with
+              retina display support
+            </p>
+            <span class="uppercase text-sm text-gray-400">Rayhan Curran</span>
+          </div>
+        </article>
+        <article class="flex text-start">
+          <div class="p-5">
+            <img src={testimonial1.src} alt="" width="200" class="" />
+          </div>
+          <div class="p-5">
+            <p class="mb-5">
+              Get a fully retina ready site when you build with Startup
+              Framework. Websites look sharper and more gorgeous on devices with
+              retina display support
+            </p>
+            <span class="uppercase text-sm text-gray-400">Rayhan Curran</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 md:px-0 mt-32">
+      <span class="text-center block tracking-wide text-gray-400">Our Team</span
+      >
+      <h3 class="text-center text-3xl font-semibold">Meet The Team</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:px-24 mt-10">
+        <article class="flex flex-col border border-gray-400">
+          <div class="flex flex-col items-center px-5 py-7">
+            <img src={team1.src} alt="" width="100" />
+            <h4 class="font-medium mb-5">Vanessa Laird</h4>
+            <span class="uppercase text-xs text-gray-400">UI Designer</span>
+          </div>
+          <div class="grid grid-cols-3 border-t border-gray-400 flex-1">
+            <div
+              class="border-r border-gray-400 flex items-center justify-center py-3"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 21 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.1726 1.95183C19.4605 2.25875 18.6871 2.47974 17.8891 2.56567C18.7116 2.0746 19.3378 1.30116 19.6324 0.380406C18.8712 0.834646 18.0119 1.16612 17.1157 1.33799C16.3913 0.564557 15.3601 0.0857627 14.2183 0.0857627C12.0208 0.0857627 10.2529 1.8659 10.2529 4.05116C10.2529 4.35808 10.2898 4.665 10.3511 4.95965C7.06097 4.78777 4.12681 3.21634 2.1748 0.810093C1.83105 1.39938 1.63463 2.0746 1.63463 2.81121C1.63463 4.18621 2.3344 5.40161 3.40248 6.11366C2.75181 6.08911 2.13797 5.90496 1.61007 5.61032C1.61007 5.62259 1.61007 5.64715 1.61007 5.65942C1.61007 7.58688 2.9728 9.18286 4.78976 9.55116C4.45829 9.6371 4.10226 9.68621 3.74623 9.68621C3.48842 9.68621 3.24289 9.66166 2.99735 9.62483C3.5007 11.1963 4.96164 12.338 6.70494 12.3748C5.34222 13.4429 3.63574 14.069 1.78195 14.069C1.45047 14.069 1.14355 14.0567 0.824358 14.0199C2.57994 15.1494 4.66699 15.8 6.91364 15.8C14.2061 15.8 18.196 9.75987 18.196 4.51768C18.196 4.34581 18.196 4.17393 18.1837 4.00206C18.9572 3.43733 19.6324 2.73755 20.1726 1.95183Z"
+                  fill="#151439"
+                  fill-opacity="0.4"></path>
+              </svg>
+            </div>
+            <div
+              class="border-r border-gray-400 flex items-center justify-center py-3"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 19 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.3898 0.514334H3.60407C1.65206 0.514334 0.0683594 2.09804 0.0683594 4.05005V15.8358C0.0683594 17.7878 1.65206 19.3715 3.60407 19.3715H10.1353V12.0668H7.67997V9.21858H10.1353V7.11924C10.1353 4.68844 11.6331 3.36255 13.8061 3.36255C14.8373 3.36255 15.7335 3.43621 15.9914 3.47304V6.01433L14.4936 6.02661C13.3027 6.02661 13.0818 6.57907 13.0818 7.40161V9.21858H15.8931L15.5248 12.0668H13.0818V19.3715H15.3898C17.3418 19.3715 18.9255 17.7878 18.9255 15.8358V4.05005C18.9255 2.09804 17.3418 0.514334 15.3898 0.514334Z"
+                  fill="#151439"
+                  fill-opacity="0.4"></path>
+              </svg>
+            </div>
+            <div class="flex items-center justify-center py-3">
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 19 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.6398 17.3581C11.6699 17.7632 10.6141 17.9965 9.49693 17.9965C7.54492 17.9965 5.76479 17.2967 4.36523 16.155C4.36523 16.155 4.47573 16.2286 4.54939 16.29C6.09626 12.9262 10.8719 11.2565 10.8719 11.2565C10.8842 11.2565 10.9088 11.2442 10.921 11.2442C12.0505 14.1907 12.517 16.646 12.6398 17.3581ZM10.3686 9.90608C10.2704 9.94291 10.1599 9.96746 10.0494 10.0043C10.0494 10.0043 5.7034 11.4038 3.50586 15.3201C2.22907 13.896 1.44336 12.0054 1.44336 9.94291C1.44336 9.85697 1.44336 9.77103 1.45564 9.68509C1.59068 9.68509 5.56836 9.78331 9.71791 8.54335C9.95117 8.99759 10.1722 9.45183 10.3686 9.90608ZM9.05497 7.3034C5.18778 8.32237 1.82394 8.28554 1.61523 8.28554C2.14314 5.79335 3.81278 3.71858 6.05943 2.66277C6.16992 2.81009 7.65541 4.82349 9.05497 7.3034ZM17.4523 11.2197C17.084 13.4663 15.8072 15.4061 14.0025 16.6215C13.9166 16.1427 13.4869 13.7733 12.4311 10.8637C15.0338 10.4585 17.2804 11.1706 17.4523 11.2197ZM7.56948 2.12259C7.5572 2.12259 7.54492 2.13487 7.54492 2.13487C7.5572 2.12259 7.5572 2.12259 7.56948 2.12259ZM14.8128 3.90273C14.7882 3.93956 13.6465 5.68286 10.6141 6.81233C9.23912 4.28331 7.7168 2.28219 7.59403 2.12259C8.20787 1.97527 8.84626 1.88933 9.49693 1.88933C11.5349 1.88933 13.4009 2.65049 14.8128 3.90273ZM17.5505 9.85697C17.4523 9.84469 14.7146 9.24313 11.94 9.59916C11.8786 9.46411 11.8295 9.31679 11.7681 9.18174C11.5963 8.78889 11.4121 8.39603 11.228 8.01545C14.4076 6.71411 15.6967 4.84804 15.7213 4.82349C16.8507 6.19849 17.5259 7.95407 17.5505 9.85697ZM18.9255 9.94291C18.9255 4.73755 14.7023 0.514334 9.49693 0.514334C4.29157 0.514334 0.0683594 4.73755 0.0683594 9.94291C0.0683594 15.1483 4.29157 19.3715 9.49693 19.3715C14.7023 19.3715 18.9255 15.1483 18.9255 9.94291Z"
+                  fill="#151439"
+                  fill-opacity="0.4"></path>
+              </svg>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col border border-gray-400">
+          <div class="flex flex-col items-center px-5 py-7">
+            <img src={team1.src} alt="" width="100" />
+            <h4 class="font-medium mb-5">Vanessa Laird</h4>
+            <span class="uppercase text-xs text-gray-400">UI Designer</span>
+          </div>
+          <div class="grid grid-cols-3 border-t border-gray-400 flex-1">
+            <div
+              class="border-r border-gray-400 flex items-center justify-center py-3"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 21 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.1726 1.95183C19.4605 2.25875 18.6871 2.47974 17.8891 2.56567C18.7116 2.0746 19.3378 1.30116 19.6324 0.380406C18.8712 0.834646 18.0119 1.16612 17.1157 1.33799C16.3913 0.564557 15.3601 0.0857627 14.2183 0.0857627C12.0208 0.0857627 10.2529 1.8659 10.2529 4.05116C10.2529 4.35808 10.2898 4.665 10.3511 4.95965C7.06097 4.78777 4.12681 3.21634 2.1748 0.810093C1.83105 1.39938 1.63463 2.0746 1.63463 2.81121C1.63463 4.18621 2.3344 5.40161 3.40248 6.11366C2.75181 6.08911 2.13797 5.90496 1.61007 5.61032C1.61007 5.62259 1.61007 5.64715 1.61007 5.65942C1.61007 7.58688 2.9728 9.18286 4.78976 9.55116C4.45829 9.6371 4.10226 9.68621 3.74623 9.68621C3.48842 9.68621 3.24289 9.66166 2.99735 9.62483C3.5007 11.1963 4.96164 12.338 6.70494 12.3748C5.34222 13.4429 3.63574 14.069 1.78195 14.069C1.45047 14.069 1.14355 14.0567 0.824358 14.0199C2.57994 15.1494 4.66699 15.8 6.91364 15.8C14.2061 15.8 18.196 9.75987 18.196 4.51768C18.196 4.34581 18.196 4.17393 18.1837 4.00206C18.9572 3.43733 19.6324 2.73755 20.1726 1.95183Z"
+                  fill="#151439"
+                  fill-opacity="0.4"></path>
+              </svg>
+            </div>
+            <div
+              class="border-r border-gray-400 flex items-center justify-center py-3"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 19 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.3898 0.514334H3.60407C1.65206 0.514334 0.0683594 2.09804 0.0683594 4.05005V15.8358C0.0683594 17.7878 1.65206 19.3715 3.60407 19.3715H10.1353V12.0668H7.67997V9.21858H10.1353V7.11924C10.1353 4.68844 11.6331 3.36255 13.8061 3.36255C14.8373 3.36255 15.7335 3.43621 15.9914 3.47304V6.01433L14.4936 6.02661C13.3027 6.02661 13.0818 6.57907 13.0818 7.40161V9.21858H15.8931L15.5248 12.0668H13.0818V19.3715H15.3898C17.3418 19.3715 18.9255 17.7878 18.9255 15.8358V4.05005C18.9255 2.09804 17.3418 0.514334 15.3898 0.514334Z"
+                  fill="#151439"
+                  fill-opacity="0.4"></path>
+              </svg>
+            </div>
+            <div class="flex items-center justify-center py-3">
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 19 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.6398 17.3581C11.6699 17.7632 10.6141 17.9965 9.49693 17.9965C7.54492 17.9965 5.76479 17.2967 4.36523 16.155C4.36523 16.155 4.47573 16.2286 4.54939 16.29C6.09626 12.9262 10.8719 11.2565 10.8719 11.2565C10.8842 11.2565 10.9088 11.2442 10.921 11.2442C12.0505 14.1907 12.517 16.646 12.6398 17.3581ZM10.3686 9.90608C10.2704 9.94291 10.1599 9.96746 10.0494 10.0043C10.0494 10.0043 5.7034 11.4038 3.50586 15.3201C2.22907 13.896 1.44336 12.0054 1.44336 9.94291C1.44336 9.85697 1.44336 9.77103 1.45564 9.68509C1.59068 9.68509 5.56836 9.78331 9.71791 8.54335C9.95117 8.99759 10.1722 9.45183 10.3686 9.90608ZM9.05497 7.3034C5.18778 8.32237 1.82394 8.28554 1.61523 8.28554C2.14314 5.79335 3.81278 3.71858 6.05943 2.66277C6.16992 2.81009 7.65541 4.82349 9.05497 7.3034ZM17.4523 11.2197C17.084 13.4663 15.8072 15.4061 14.0025 16.6215C13.9166 16.1427 13.4869 13.7733 12.4311 10.8637C15.0338 10.4585 17.2804 11.1706 17.4523 11.2197ZM7.56948 2.12259C7.5572 2.12259 7.54492 2.13487 7.54492 2.13487C7.5572 2.12259 7.5572 2.12259 7.56948 2.12259ZM14.8128 3.90273C14.7882 3.93956 13.6465 5.68286 10.6141 6.81233C9.23912 4.28331 7.7168 2.28219 7.59403 2.12259C8.20787 1.97527 8.84626 1.88933 9.49693 1.88933C11.5349 1.88933 13.4009 2.65049 14.8128 3.90273ZM17.5505 9.85697C17.4523 9.84469 14.7146 9.24313 11.94 9.59916C11.8786 9.46411 11.8295 9.31679 11.7681 9.18174C11.5963 8.78889 11.4121 8.39603 11.228 8.01545C14.4076 6.71411 15.6967 4.84804 15.7213 4.82349C16.8507 6.19849 17.5259 7.95407 17.5505 9.85697ZM18.9255 9.94291C18.9255 4.73755 14.7023 0.514334 9.49693 0.514334C4.29157 0.514334 0.0683594 4.73755 0.0683594 9.94291C0.0683594 15.1483 4.29157 19.3715 9.49693 19.3715C14.7023 19.3715 18.9255 15.1483 18.9255 9.94291Z"
+                  fill="#151439"
+                  fill-opacity="0.4"></path>
+              </svg>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col border border-gray-400">
+          <div class="flex flex-col items-center px-5 py-7">
+            <img src={team1.src} alt="" width="100" />
+            <h4 class="font-medium mb-5">Vanessa Laird</h4>
+            <span class="uppercase text-xs text-gray-400">UI Designer</span>
+          </div>
+          <div class="grid grid-cols-3 border-t border-gray-400 flex-1">
+            <div
+              class="border-r border-gray-400 flex items-center justify-center py-3"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 21 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.1726 1.95183C19.4605 2.25875 18.6871 2.47974 17.8891 2.56567C18.7116 2.0746 19.3378 1.30116 19.6324 0.380406C18.8712 0.834646 18.0119 1.16612 17.1157 1.33799C16.3913 0.564557 15.3601 0.0857627 14.2183 0.0857627C12.0208 0.0857627 10.2529 1.8659 10.2529 4.05116C10.2529 4.35808 10.2898 4.665 10.3511 4.95965C7.06097 4.78777 4.12681 3.21634 2.1748 0.810093C1.83105 1.39938 1.63463 2.0746 1.63463 2.81121C1.63463 4.18621 2.3344 5.40161 3.40248 6.11366C2.75181 6.08911 2.13797 5.90496 1.61007 5.61032C1.61007 5.62259 1.61007 5.64715 1.61007 5.65942C1.61007 7.58688 2.9728 9.18286 4.78976 9.55116C4.45829 9.6371 4.10226 9.68621 3.74623 9.68621C3.48842 9.68621 3.24289 9.66166 2.99735 9.62483C3.5007 11.1963 4.96164 12.338 6.70494 12.3748C5.34222 13.4429 3.63574 14.069 1.78195 14.069C1.45047 14.069 1.14355 14.0567 0.824358 14.0199C2.57994 15.1494 4.66699 15.8 6.91364 15.8C14.2061 15.8 18.196 9.75987 18.196 4.51768C18.196 4.34581 18.196 4.17393 18.1837 4.00206C18.9572 3.43733 19.6324 2.73755 20.1726 1.95183Z"
+                  fill="#151439"
+                  fill-opacity="0.4"></path>
+              </svg>
+            </div>
+            <div
+              class="border-r border-gray-400 flex items-center justify-center py-3"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 19 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.3898 0.514334H3.60407C1.65206 0.514334 0.0683594 2.09804 0.0683594 4.05005V15.8358C0.0683594 17.7878 1.65206 19.3715 3.60407 19.3715H10.1353V12.0668H7.67997V9.21858H10.1353V7.11924C10.1353 4.68844 11.6331 3.36255 13.8061 3.36255C14.8373 3.36255 15.7335 3.43621 15.9914 3.47304V6.01433L14.4936 6.02661C13.3027 6.02661 13.0818 6.57907 13.0818 7.40161V9.21858H15.8931L15.5248 12.0668H13.0818V19.3715H15.3898C17.3418 19.3715 18.9255 17.7878 18.9255 15.8358V4.05005C18.9255 2.09804 17.3418 0.514334 15.3898 0.514334Z"
+                  fill="#151439"
+                  fill-opacity="0.4"></path>
+              </svg>
+            </div>
+            <div class="flex items-center justify-center py-3">
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 19 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.6398 17.3581C11.6699 17.7632 10.6141 17.9965 9.49693 17.9965C7.54492 17.9965 5.76479 17.2967 4.36523 16.155C4.36523 16.155 4.47573 16.2286 4.54939 16.29C6.09626 12.9262 10.8719 11.2565 10.8719 11.2565C10.8842 11.2565 10.9088 11.2442 10.921 11.2442C12.0505 14.1907 12.517 16.646 12.6398 17.3581ZM10.3686 9.90608C10.2704 9.94291 10.1599 9.96746 10.0494 10.0043C10.0494 10.0043 5.7034 11.4038 3.50586 15.3201C2.22907 13.896 1.44336 12.0054 1.44336 9.94291C1.44336 9.85697 1.44336 9.77103 1.45564 9.68509C1.59068 9.68509 5.56836 9.78331 9.71791 8.54335C9.95117 8.99759 10.1722 9.45183 10.3686 9.90608ZM9.05497 7.3034C5.18778 8.32237 1.82394 8.28554 1.61523 8.28554C2.14314 5.79335 3.81278 3.71858 6.05943 2.66277C6.16992 2.81009 7.65541 4.82349 9.05497 7.3034ZM17.4523 11.2197C17.084 13.4663 15.8072 15.4061 14.0025 16.6215C13.9166 16.1427 13.4869 13.7733 12.4311 10.8637C15.0338 10.4585 17.2804 11.1706 17.4523 11.2197ZM7.56948 2.12259C7.5572 2.12259 7.54492 2.13487 7.54492 2.13487C7.5572 2.12259 7.5572 2.12259 7.56948 2.12259ZM14.8128 3.90273C14.7882 3.93956 13.6465 5.68286 10.6141 6.81233C9.23912 4.28331 7.7168 2.28219 7.59403 2.12259C8.20787 1.97527 8.84626 1.88933 9.49693 1.88933C11.5349 1.88933 13.4009 2.65049 14.8128 3.90273ZM17.5505 9.85697C17.4523 9.84469 14.7146 9.24313 11.94 9.59916C11.8786 9.46411 11.8295 9.31679 11.7681 9.18174C11.5963 8.78889 11.4121 8.39603 11.228 8.01545C14.4076 6.71411 15.6967 4.84804 15.7213 4.82349C16.8507 6.19849 17.5259 7.95407 17.5505 9.85697ZM18.9255 9.94291C18.9255 4.73755 14.7023 0.514334 9.49693 0.514334C4.29157 0.514334 0.0683594 4.73755 0.0683594 9.94291C0.0683594 15.1483 4.29157 19.3715 9.49693 19.3715C14.7023 19.3715 18.9255 15.1483 18.9255 9.94291Z"
+                  fill="#151439"
+                  fill-opacity="0.4"></path>
+              </svg>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 md:px-0 mt-32">
+      <span class="text-center block tracking-wide text-gray-400">Our Team</span
+      >
+      <h3 class="text-center text-3xl font-semibold">
+        Subscribe Our Newsleter
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-10 mt-16">
+        <article class="">
+          <img src={carta.src} alt="" />
+        </article>
+        <article class="col-span-2 md:px-20 md:py-10 flex flex-col space-y-6">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Perferendis sed in, perspiciatis explicabo at, sequi ab quia laborum
+            veritatis ea atque harum nesciunt
+          </p>
+          <input
+            type="text"
+            placeholder="Your E-mail here"
+            class="px-5 py-3 rounded-3xl shadow-lg"
+          />
+          <input
+            type="button"
+            value="Subscribe Our Newsletter"
+            class="px-5 py-3 text-xs rounded-lg bg-orange-500 text-white"
+          />
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div
+      class="max-w-6xl mx-auto mt-5 grid grid-cols-1 md:grid-cols-2 items-center mb-5 gap-5"
+    >
+      <div class="flex space-x-5">
+        <a href="/" aria-label="Logo"
+          ><img src={logo.src} alt="" width="120" /></a
+        >
+        <p class="text-xs text-gray-500">
+          ®2023 Epixelab. All rights reserved
+        </p>
+      </div>
+      <div class="ml-auto">
+        <ul class="hidden md:flex">
+          <li class="px-4 py-1 text-xs">Home</li>
+          <li class="px-4 py-1 text-xs">About Us</li>
+          <li class="px-4 py-1 text-xs">Our App</li>
+          <li class="px-4 py-1 text-xs">Contacts</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  * {
+    /* outline: 1px solid red; */
+  }
+</style>

@@ -1,0 +1,31 @@
+---
+import logo from "@assets/logo.webp";
+import Button from "./Button.astro";
+// interface Props {
+// 	title: string;
+// 	body: string;
+// 	href: string;
+// }
+
+// const { href, title, body } = Astro.props;
+---
+
+<header class="bg-transparent">
+  <nav
+    class="flex max-w-6xl mx-auto py-3 items-center justify-between px-6 md:px-0"
+  >
+    <a href="/" aria-label="Logo"><img src={logo.src} alt="" width="180" /></a>
+
+    <ul class="hidden md:flex">
+      <li class="px-4 py-1">Home</li>
+      <li class="px-4 py-1">About Us</li>
+      <li class="px-4 py-1">Our App</li>
+      <li class="px-4 py-1">Contacts</li>
+    </ul>
+
+    <div class="space-x-3">
+      <a href="#" aria-label="Log in">Log in</a>
+      <Button title="Sign up" href="/" />
+    </div>
+  </nav>
+</header>
