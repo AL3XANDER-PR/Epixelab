@@ -4,9 +4,9 @@ import Header from "../components/Header.astro";
 import logo from "@assets/logo.webp";
 
 import persona from "@assets/Imagen1.png";
-import dibujos from "@assets/imagen2.webp";
-import chat from "@assets/imagen3.webp";
-import play from "@assets/imagen4.png";
+import dibujos from "@assets/Imagen2.webp";
+import chat from "@assets/Imagen3.webp";
+import play from "@assets/Imagen4.png";
 import testimonial1 from "@assets/testimonial1.png";
 import team1 from "@assets/team1.png";
 import carta from "@assets/carta.png";
@@ -53,12 +53,12 @@ import Button from "@components/Button.astro";
       <img class="relative left-6 md:left-20" src={persona.src} alt="" ' />
       <img
         class="absolute -left-16 md:-left-28 top-10 md:top-7 -z-20 md:w-[500px]"
-        src="../src/assets/Imagen3.png"
+        src={chat.src}
         alt=""
       />
       <img
         class="absolute left-2 top-14 -z-10 md:left-14 md:top-24"
-        src="../src/assets/Imagen2.png"
+        src={dibujos.src}
         alt=""
       />
     </div>
@@ -128,7 +128,7 @@ import Button from "@components/Button.astro";
         >
       </div>
       <div>
-        <img src="../src/assets/Imagen4.png" alt="" />
+        <img src={play.src} alt="" />
       </div>
     </section>
 
@@ -140,12 +140,7 @@ import Button from "@components/Button.astro";
       >
         <article class="flex text-start">
           <div class="p-5">
-            <img
-              src="../src/assets/testimonial1.png"
-              alt=""
-              width="200"
-              class=""
-            />
+            <img src={testimonial1.src} alt="" width="200" class="" />
           </div>
           <div class="p-5">
             <p class="mb-5">
@@ -158,12 +153,7 @@ import Button from "@components/Button.astro";
         </article>
         <article class="flex text-start">
           <div class="p-5">
-            <img
-              src="../src/assets/testimonial1.png"
-              alt=""
-              width="200"
-              class=""
-            />
+            <img src={testimonial1.src} alt="" width="200" class="" />
           </div>
           <div class="p-5">
             <p class="mb-5">
@@ -176,12 +166,7 @@ import Button from "@components/Button.astro";
         </article>
         <article class="flex text-start">
           <div class="p-5">
-            <img
-              src="../src/assets/testimonial1.png"
-              alt=""
-              width="200"
-              class=""
-            />
+            <img src={testimonial1.src} alt="" width="200" class="" />
           </div>
           <div class="p-5">
             <p class="mb-5">
@@ -194,12 +179,7 @@ import Button from "@components/Button.astro";
         </article>
         <article class="flex text-start">
           <div class="p-5">
-            <img
-              src="../src/assets/testimonial1.png"
-              alt=""
-              width="200"
-              class=""
-            />
+            <img src={testimonial1.src} alt="" width="200" class="" />
           </div>
           <div class="p-5">
             <p class="mb-5">
@@ -221,7 +201,7 @@ import Button from "@components/Button.astro";
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:px-24 mt-10">
         <article class="flex flex-col border border-gray-400">
           <div class="flex flex-col items-center px-5 py-7">
-            <img src="../src/assets/team1.png" alt="" width="100" />
+            <img src={team1.src} alt="" width="100" />
             <h4 class="font-medium mb-5">Vanessa Laird</h4>
             <span class="uppercase text-xs text-gray-400">UI Designer</span>
           </div>
@@ -273,7 +253,7 @@ import Button from "@components/Button.astro";
         </article>
         <article class="flex flex-col border border-gray-400">
           <div class="flex flex-col items-center px-5 py-7">
-            <img src="../src/assets/team1.png" alt="" width="100" />
+            <img src={team1.src} alt="" width="100" />
             <h4 class="font-medium mb-5">Vanessa Laird</h4>
             <span class="uppercase text-xs text-gray-400">UI Designer</span>
           </div>
@@ -325,7 +305,7 @@ import Button from "@components/Button.astro";
         </article>
         <article class="flex flex-col border border-gray-400">
           <div class="flex flex-col items-center px-5 py-7">
-            <img src="../src/assets/team1.png" alt="" width="100" />
+            <img src={team1.src} alt="" width="100" />
             <h4 class="font-medium mb-5">Vanessa Laird</h4>
             <span class="uppercase text-xs text-gray-400">UI Designer</span>
           </div>
@@ -387,7 +367,7 @@ import Button from "@components/Button.astro";
 
       <div class="grid grid-cols-1 md:grid-cols-3 md:gap-10 mt-16">
         <article class="">
-          <img src="../src/assets/carta.png" alt="" />
+          <img src={carta.src} alt="" />
         </article>
         <article class="col-span-2 md:px-20 md:py-10 flex flex-col space-y-6">
           <p>
