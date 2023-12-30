@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import logo from "@assets/logo.webp";
+
 import persona from "@assets/imagen1.png";
 import dibujos from "@assets/imagen2.webp";
 import chat from "@assets/imagen3.webp";
@@ -8,7 +10,7 @@ import play from "@assets/imagen4.png";
 import testimonial1 from "@assets/testimonial1.png";
 import team1 from "@assets/team1.png";
 import carta from "@assets/carta.png";
-import logo from "@assets/logo.webp";
+// import logo from "@assets/logo.webp";
 import Button from "@components/Button.astro";
 ---
 
@@ -419,7 +421,7 @@ import Button from "@components/Button.astro";
     >
       <div class="flex space-x-5">
         <a href="/" aria-label="Logo"
-          ><img src="../src/assets/logo.png" alt="" width="120" /></a
+          ><img src={logo.src} alt="" width="120" /></a
         >
         <p class="text-xs text-gray-500">
           ®2023 Epixelab. All rights reserved
